@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Cash_Register_App.ManagerPage" 
+             NavigationPage.HasBackButton="False">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem IconImageSource="homeicon.png" Priority="0" Order="Primary" x:Name="homeIcon" Clicked="homeIcon_Clicked"/>
+    </ContentPage.ToolbarItems>
+    <NavigationPage.TitleView Background="white">
+        
+        <StackLayout VerticalOptions="Center"  Orientation="Horizontal">
+            <!--<Button x:Name="backHome" Text="Home" Clicked="backHome_Clicked" TextColor="White" HorizontalOptions="Start" Margin="1" BackgroundColor="#2196F3"/>-->
+            <Label  TextColor="Black" HorizontalOptions="Start" 
+                    BackgroundColor="#2196F3" VerticalTextAlignment="Center" Text="Manager Page" FontSize="Medium" FontAttributes="Bold"/>
+        </StackLayout>
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+            <Button x:Name="historyButton" Text="History" TextColor="White" BackgroundColor="#0066CC" Margin="15"
+                    CornerRadius="15" Clicked="historyButton_Clicked"/>
+
+            <Button x:Name="restokeButton" Text="Restoke" TextColor="White" BackgroundColor="#0066CC" Margin="15"
+                    CornerRadius="15" Clicked="restokeButton_Clicked"/>
+
+            <Button x:Name="newProductbutton" Text="Add New Product" TextColor="White" BackgroundColor="#0066CC" Margin="15"
+                    CornerRadius="15" Clicked="newProductbutton_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

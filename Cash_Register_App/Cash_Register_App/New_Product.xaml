@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Cash_Register_App.New_Product"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             Title="Add New Product">
+    <NavigationPage.TitleView Background="white">
+        <StackLayout  HorizontalOptions="Center" VerticalOptions="Center"  Orientation="Horizontal">
+            <Label  TextColor="Black" HorizontalOptions="Center" VerticalTextAlignment="Center" 
+                    Text="New Product" FontSize="Medium" FontAttributes="Bold"/>
+        </StackLayout>
+    </NavigationPage.TitleView>
+
+    <!--<ContentPage.ToolbarItems>
+        <ToolbarItem Text="Save" Order="Primary" Priority="0" Clicked="save_ToolbarItem_Clicked"/>
+        <ToolbarItem Text="Cancel" Order="Primary" Priority="1" Clicked="cancel_ToolbarItem_Clicked"/>
+    </ContentPage.ToolbarItems>-->
+    
+    <ContentPage.Content>
+        <StackLayout>
+        
+            <Label Text="New Product" TextColor="Black" FontSize="Title" Margin="30"/>
+
+            <StackLayout Orientation="Horizontal" Margin="10">
+                <Label Text="Product" TextColor="Black" FontSize="20" Padding="10"/>
+                <Entry x:Name="productName" Keyboard="Text" Placeholder="Enter New Product"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" Margin="10">
+                <Label Text="Price" TextColor="Black" FontSize="20" Padding="20"/>
+                <Entry x:Name="productPrice" Keyboard="Numeric" Placeholder="Enter Product Price"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" Margin="10">
+                <Label Text="Quantity" TextColor="Black" FontSize="20" Padding="10"/>
+                <Entry x:Name="productQuantity" Keyboard="Numeric" Placeholder="Enter Product Quantity"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Button Text="Save" TextColor="White" BackgroundColor="#008CBA" Clicked="Save_Button_Clicked" CornerRadius="10"/>
+                <Button Text="Cancel" TextColor="White" BackgroundColor="#008CBA" Clicked="Cancel_Button_Clicked" CornerRadius="10"/>
+            </StackLayout>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
